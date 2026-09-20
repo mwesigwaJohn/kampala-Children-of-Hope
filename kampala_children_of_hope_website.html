@@ -1,77 +1,38 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kampala Children of Hope Initiative</title>
-<style>
-:root{--green:#176b4d;--gold:#e9b44c;--cream:#fffaf0;--dark:#17342b;--muted:#66756f}
-*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:white;position:sticky;top:0;z-index:5;box-shadow:0 2px 14px #00000010}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);font-size:18px}.mark{width:42px;height:42px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-size:22px}
-nav a{color:var(--dark);text-decoration:none;margin-left:24px;font-weight:600}.btn{background:var(--gold);padding:11px 18px;border-radius:25px}
-.hero{padding:80px 7%;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;background:linear-gradient(135deg,#fffaf0,#edf6f0)}
-.kicker{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:2px}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:12px 0 20px}.hero p{font-size:20px;color:var(--muted);max-width:600px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.primary,.secondary{padding:14px 23px;border-radius:30px;text-decoration:none;font-weight:800}.primary{background:var(--green);color:white}.secondary{border:2px solid var(--green);color:var(--green)}
-.art{background:var(--green);min-height:390px;border-radius:34px;display:grid;place-items:center;position:relative;overflow:hidden}.sun{width:220px;height:220px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:95px}.leaf{position:absolute;color:white;font-size:80px;opacity:.2}.l1{left:20px;top:30px}.l2{right:20px;bottom:20px}
-section{padding:70px 7%}.section-title{text-align:center;max-width:700px;margin:0 auto 42px}.section-title h2{font-size:40px;margin:8px}.section-title p{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;padding:30px;border-radius:24px;box-shadow:0 8px 30px #17342b10}.icon{font-size:38px}.card h3{margin:10px 0}.card p{color:var(--muted)}
-.campaign{background:var(--green);color:white;border-radius:30px;padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.campaign p{opacity:.9}.progress{height:14px;background:#ffffff35;border-radius:20px;overflow:hidden}.bar{width:0%;height:100%;background:var(--gold)}.amount{display:flex;justify-content:space-between;margin:10px 0 24px;font-weight:700}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:25px;border-left:4px solid var(--gold);background:white;border-radius:12px}
-.cta{text-align:center;background:#f2ead8}.cta h2{font-size:40px}.footer{background:#10271f;color:white;padding:35px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer small{opacity:.7}
-@media(max-width:800px){nav .links{display:none}.hero,.campaign{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{padding-top:55px}.campaign{padding:30px}section{padding:55px 6%}}
-</style>
-</head>
-<body>
-<nav>
-  <div class="logo"><div class="mark">♥</div>Kampala Children of Hope</div>
-  <div class="links"><a href="#about">About</a><a href="#work">Our Work</a><a href="#campaign">Campaign</a><a class="btn" href="#support">Support Us</a></div>
-</nav>
 
-<header class="hero">
-  <div>
-    <div class="kicker">Central Kampala, Uganda 🇺🇬</div>
-    <h1>Give a child hope. Build a better future.</h1>
-    <p>We support children from vulnerable and low-income families with practical help, dignity and hope—starting one child, one family and one community at a time.</p>
-    <div class="actions"><a class="primary" href="#campaign">Support the $1,000 Campaign</a><a class="secondary" href="#about">Learn More</a></div>
-  </div>
-  <div class="art"><div class="leaf l1">✦</div><div class="sun">🤝</div><div class="leaf l2">✦</div></div>
-</header>
+  <meta charset="UTF-8">
 
-<section id="about">
-  <div class="section-title"><div class="kicker">Who we are</div><h2>Every child deserves a chance.</h2><p>Kampala Children of Hope Initiative (KCOHI) is a community-focused initiative being developed to support children in Central Kampala.</p></div>
-  <div class="cards">
-    <div class="card"><div class="icon">🍲</div><h3>Food Support</h3><p>Providing food and essential supplies to children and families facing hardship.</p></div>
-    <div class="card"><div class="icon">📚</div><h3>Education</h3><p>Helping children access school materials and other educational necessities.</p></div>
-    <div class="card"><div class="icon">👕</div><h3>Clothing & Hygiene</h3><p>Providing clothing, shoes and basic hygiene essentials where needed.</p></div>
-  </div>
-</section>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<section id="campaign">
-  <div class="campaign">
-    <div><div class="kicker" style="color:var(--gold)">First campaign</div><h2>Give a Child Hope — $1,000 Campaign</h2><p>Our first goal is to support approximately 20–25 children with food, school supplies, clothing, hygiene items and other needs identified in the community.</p><a class="secondary" style="display:inline-block;background:white;border-color:white;margin-top:12px" href="#support">How to Support</a></div>
-    <div><div class="amount"><span>Fundraising goal</span><span>$1,000</span></div><div class="progress"><div class="bar"></div></div><p style="margin-top:20px">Donation details will be published here once the official collection method is established.</p></div>
-  </div>
-</section>
+  <title>Kampala Children of Hope</title>
 
-<section id="work">
-  <div class="section-title"><div class="kicker">How we work</div><h2>Small steps. Real accountability.</h2><p>We want supporters to know what their contribution is helping accomplish.</p></div>
-  <div class="steps">
-    <div class="step"><b>01 — Identify</b><p>Work with families and community representatives to identify children who need support.</p></div>
-    <div class="step"><b>02 — Support</b><p>Provide practical assistance based on the child's and family's needs.</p></div>
-    <div class="step"><b>03 — Report</b><p>Keep records of donations and expenses and share project updates with supporters.</p></div>
-  </div>
-</section>
+  <style>
 
-<section id="support" class="cta">
-  <h2>Be part of the first 25.</h2>
-  <p>Every contribution, connection, volunteer hour or shared message can help us move toward our first $1,000 goal.</p>
-  <div class="actions" style="justify-content:center"><a class="primary" href="mailto:YOUR-EMAIL@example.com">Contact Us</a><a class="secondary" href="mailto:YOUR-EMAIL@example.com">Become a Supporter</a></div>
-  <p><small>Phone/WhatsApp and official donation information will be added after they are set up.</small></p>
-</section>
+    * {
 
-<footer class="footer">
-  <div><b>Kampala Children of Hope Initiative</b><br><small>Central Kampala, Uganda 🇺🇬</small></div>
-  <small>Giving children hope. Building better futures.</small>
-</footer>
-</body>
-</html>
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      line-height: 1.6;
+
+      background: #f7f9fc;
